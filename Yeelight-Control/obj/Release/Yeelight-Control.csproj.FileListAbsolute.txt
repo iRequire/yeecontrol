@@ -1,0 +1,15 @@
+C:\Users\Patrick\source\repos\Yeelight-Control\Yeelight-Control\bin\Release\YeelightControl.exe.config
+C:\Users\Patrick\source\repos\Yeelight-Control\Yeelight-Control\bin\Release\YeelightControl.exe
+C:\Users\Patrick\source\repos\Yeelight-Control\Yeelight-Control\bin\Release\YeelightControl.pdb
+C:\Users\Patrick\source\repos\Yeelight-Control\Yeelight-Control\bin\Release\Newtonsoft.Json.dll
+C:\Users\Patrick\source\repos\Yeelight-Control\Yeelight-Control\bin\Release\YeelightAPI.dll
+C:\Users\Patrick\source\repos\Yeelight-Control\Yeelight-Control\bin\Release\Newtonsoft.Json.xml
+C:\Users\Patrick\source\repos\Yeelight-Control\Yeelight-Control\bin\Release\YeelightAPI.xml
+C:\Users\Patrick\source\repos\Yeelight-Control\Yeelight-Control\obj\Release\Yeelight_Control.Devices.resources
+C:\Users\Patrick\source\repos\Yeelight-Control\Yeelight-Control\obj\Release\Yeelight_Control.MainForm.resources
+C:\Users\Patrick\source\repos\Yeelight-Control\Yeelight-Control\obj\Release\Yeelight_Control.Properties.Resources.resources
+C:\Users\Patrick\source\repos\Yeelight-Control\Yeelight-Control\obj\Release\Yeelight-Control.csproj.GenerateResource.cache
+C:\Users\Patrick\source\repos\Yeelight-Control\Yeelight-Control\obj\Release\Yeelight-Control.csproj.CoreCompileInputs.cache
+C:\Users\Patrick\source\repos\Yeelight-Control\Yeelight-Control\obj\Release\Yeelight-Control.csproj.CopyComplete
+C:\Users\Patrick\source\repos\Yeelight-Control\Yeelight-Control\obj\Release\YeelightControl.exe
+C:\Users\Patrick\source\repos\Yeelight-Control\Yeelight-Control\obj\Release\YeelightControl.pdb

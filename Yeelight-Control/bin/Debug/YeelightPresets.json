@@ -1,0 +1,183 @@
+[
+  {
+    "name": "Mix Grün und Blau",
+    "bulbs": [
+      {
+        "hostname": "192.168.2.219",
+        "color": {
+          "r": 0,
+          "g": 0,
+          "b": 255
+        },
+        "brightness": 100,
+        "power": true
+      },
+      {
+        "hostname": "192.168.2.218",
+        "color": {
+          "r": 0,
+          "g": 255,
+          "b": 0
+        },
+        "brightness": 100,
+        "power": true
+      },
+      {
+        "hostname": "192.168.2.221",
+        "color": {
+          "r": 0,
+          "g": 0,
+          "b": 255
+        },
+        "brightness": 100,
+        "power": true
+      },
+      {
+        "hostname": "192.168.2.222",
+        "color": {
+          "r": 0,
+          "g": 255,
+          "b": 0
+        },
+        "brightness": 100,
+        "power": true
+      }
+    ]
+  },
+  {
+    "name": "Nur Bett Weiß",
+    "bulbs": [
+      {
+        "hostname": "192.168.2.219",
+        "color": {
+          "r": 0,
+          "g": 0,
+          "b": 255
+        },
+        "brightness": 100,
+        "power": false
+      },
+      {
+        "hostname": "192.168.2.218",
+        "color": {
+          "r": 0,
+          "g": 255,
+          "b": 0
+        },
+        "brightness": 100,
+        "power": false
+      },
+      {
+        "hostname": "192.168.2.221",
+        "color": {
+          "r": 0,
+          "g": 255,
+          "b": 255
+        },
+        "brightness": 1,
+        "temperature": 3500,
+        "power": true
+      },
+      {
+        "hostname": "192.168.2.222",
+        "color": {
+          "r": 0,
+          "g": 255,
+          "b": 0
+        },
+        "brightness": 100,
+        "power": false
+      }
+    ]
+  },
+  {
+    "name": "Mix Blau und Rot",
+    "bulbs": [
+      {
+        "hostname": "192.168.2.221",
+        "color": {
+          "r": 0,
+          "g": 0,
+          "b": 255
+        },
+        "brightness": 100,
+        "power": true
+      },
+      {
+        "hostname": "192.168.2.219",
+        "color": {
+          "r": 0,
+          "g": 0,
+          "b": 255
+        },
+        "brightness": 100,
+        "power": true
+      },
+      {
+        "hostname": "192.168.2.218",
+        "color": {
+          "r": 255,
+          "g": 0,
+          "b": 0
+        },
+        "brightness": 100,
+        "power": true
+      },
+      {
+        "hostname": "192.168.2.222",
+        "color": {
+          "r": 255,
+          "g": 0,
+          "b": 0
+        },
+        "brightness": 100,
+        "power": true
+      }
+    ]
+  },
+  {
+    "name": "Alle Grün",
+    "bulbs": [
+      {
+        "hostname": "192.168.2.221",
+        "color": {
+          "r": 0,
+          "g": 255,
+          "b": 0
+        },
+        "brightness": 100,
+        "power": true
+      },
+      {
+        "hostname": "192.168.2.222",
+        "color": {
+          "r": 0,
+          "g": 255,
+          "b": 0
+        },
+        "brightness": 100,
+        "power": true
+      },
+      {
+        "hostname": "192.168.2.219",
+        "color": {
+          "r": 0,
+          "g": 255,
+          "b": 0
+        },
+        "brightness": 100,
+        "power": true
+      },
+      {
+        "hostname": "192.168.2.218",
+        "color": {
+          "r": 0,
+          "g": 255,
+          "b": 0
+        },
+        "brightness": 100,
+        "power": true
+      }
+    ]
+  }
+]
