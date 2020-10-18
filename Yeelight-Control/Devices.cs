@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Yeelight_Control.Helpers;
-using Yeelight_Control.Helpers.YeelightDevices;
+using Yeelight_Control.Helpers.YeeControlDevice;
 using YeelightAPI;
 
 namespace Yeelight_Control
@@ -18,7 +18,7 @@ namespace Yeelight_Control
     public partial class Devices : Form
     {
 
-        List<YeelightControlDevice> yeelightControlDevices = new List<YeelightControlDevice>();
+        List<YeeControlDevice> yeelightControlDevices = new List<YeeControlDevice>();
 
         public Devices()
         {
@@ -29,11 +29,7 @@ namespace Yeelight_Control
         {
             toolStripStatusLabel1.Text = "YeeControl " + GlobalVariables.VERSION + " | www.yeecontrol.com";
 
-            if (!File.Exists(GlobalVariables.PATH_DEVICES))
-            {
-                File.WriteAllText(GlobalVariables.PATH_DEVICES, "[]");
-            }
-            yeelightControlDevices = YeelightDevices.GetYeelightControlDevices();
+            yeelightControlDevices = YeeControlDeviceHelper.GetYeeControlDevices();
             RefreshDeviceList();
             groupBoxActions.Enabled = false;
         }
@@ -58,16 +54,16 @@ namespace Yeelight_Control
                 button_Open.Enabled = true;
             });
 
-            YeelightDevices.SaveYeelightControlDevices(yeelightControlDevices);
+            YeeControlDeviceHelper.SaveYeeControlDevices(yeelightControlDevices);
             RefreshDeviceList();
         }
 
         private void OnDeviceFound(Device device)
         {
-            YeelightControlDevice ycd = new YeelightControlDevice();
+            YeeControlDevice ycd = new YeeControlDevice();
             ycd.Hostname = device.Hostname;
 
-            foreach(YeelightControlDevice y in yeelightControlDevices)
+            foreach(YeeControlDevice y in yeelightControlDevices)
             {
                 if (y.Hostname == ycd.Hostname)
                     return;
@@ -91,7 +87,7 @@ namespace Yeelight_Control
         {
             groupBoxActions.Enabled = false;
             listBox_Devices.Items.Clear();
-            foreach (YeelightControlDevice yeelightControlDevice in yeelightControlDevices)
+            foreach (YeeControlDevice yeelightControlDevice in yeelightControlDevices)
             {
                 listBox_Devices.Items.Add(yeelightControlDevice.Hostname);
             }
@@ -155,7 +151,7 @@ namespace Yeelight_Control
                 int found = -1;
                 for (int i = 0; i < yeelightControlDevices.Count; i++)
                 {
-                    YeelightControlDevice y = yeelightControlDevices[i];
+                    YeeControlDevice y = yeelightControlDevices[i];
                     if (y.Hostname == hostname)
                     {
                         found = i;
@@ -164,7 +160,7 @@ namespace Yeelight_Control
                 }
                 if(found > -1)
                 {
-                    yeelightControlDevices = YeelightDevices.DeleteYeelightControlAtIndex(found);
+                    yeelightControlDevices = YeeControlDeviceHelper.DeleteYeeControlAtIndex(found);
                     RefreshDeviceList();
                 }
             }

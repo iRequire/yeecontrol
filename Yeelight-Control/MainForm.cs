@@ -7,7 +7,8 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Yeelight_Control.Helpers;
-using Yeelight_Control.Helpers.YeelightDevices;
+using Yeelight_Control.Helpers.YeeControlDevice;
+using Yeelight_Control.Helpers.YeeControlPreset;
 using YeelightAPI;
 
 namespace Yeelight_Control
@@ -19,7 +20,7 @@ namespace Yeelight_Control
         Size defaultSize = new Size(580, 345);
         Size expandedSize = new Size(580, 525);
 
-        List<YeelightPreset> savedYeelightStates = new List<YeelightPreset>();
+        List<YeeControlPreset> savedYeeControlPresets = new List<YeeControlPreset>();
         int selectedPreset = -1;
 
         Dictionary<int, string> hostnamesByListIndex = new Dictionary<int, string>();
@@ -32,18 +33,13 @@ namespace Yeelight_Control
         private void Form1_Load(object sender, EventArgs e)
         {
             toolStripStatusLabel1.Text = "YeeControl " + GlobalVariables.VERSION + " | www.yeecontrol.com";
-            foreach (YeelightControlDevice ycd in YeelightDevices.GetYeelightControlDevices())
+            foreach (YeeControlDevice ycd in YeeControlDeviceHelper.GetYeeControlDevices())
             {
                 allDevices.Add(new Device(ycd.Hostname));
             }
             allDevices.Connect();
 
             this.Size = defaultSize;
-
-            if(!File.Exists(GlobalVariables.PATH_PRESETS))
-            {
-                File.WriteAllText(GlobalVariables.PATH_PRESETS, "[]");
-            }
 
             RefreshPresets();
             RefreshCheckedListBox();
@@ -56,9 +52,9 @@ namespace Yeelight_Control
 
         private void RefreshPresets()
         {
-            savedYeelightStates = YeelightPreset.FromJson(File.ReadAllText(GlobalVariables.PATH_PRESETS));
+            savedYeeControlPresets = YeeControlPresetHelper.GetYeeControlPresets();
             listBox1.Items.Clear();
-            foreach(YeelightPreset savedYeelightState in savedYeelightStates)
+            foreach(YeeControlPreset savedYeelightState in savedYeeControlPresets)
             {
                 listBox1.Items.Add(savedYeelightState.Name);
             }
@@ -90,7 +86,7 @@ namespace Yeelight_Control
             string curItem = listBox1.SelectedItem?.ToString();
             if (curItem is string)
             {
-                YeelightPreset state = savedYeelightStates[listBox1.SelectedIndex];
+                YeeControlPreset state = savedYeeControlPresets[listBox1.SelectedIndex];
                 selectedPreset = listBox1.SelectedIndex;
                 textBox_Rename.Text = state.Name;
 
@@ -180,6 +176,7 @@ namespace Yeelight_Control
         {
             if (action == null)
                 return;
+
             Task.Run(async () => {
                 while (!token.IsCancellationRequested)
                 {
@@ -205,9 +202,6 @@ namespace Yeelight_Control
         {
             DeviceGroup devices = new DeviceGroup();
 
-
-
-
             for(int i = 0; i < checkedListBox_Devices.Items.Count; i++)
             {
                 string hostname = hostnamesByListIndex[i];
@@ -222,7 +216,6 @@ namespace Yeelight_Control
                     }
                 }
             }
-
 
             return devices;
         }
@@ -262,16 +255,17 @@ namespace Yeelight_Control
         {
             if(textBox_Preset.Text.Length >= 1)
             {
-                YeelightPreset saved = new YeelightPreset();
+                YeeControlPreset saved = new YeeControlPreset();
                 saved.Name = textBox_Preset.Text;
                 saved.Bulbs = new List<Bulb>(); 
                 foreach(Device device in allDevices)
                 {
                     saved.Bulbs.Add(await GetBulb(device));
                 }
-                savedYeelightStates.Add(saved);
+                savedYeeControlPresets.Add(saved);
 
-                SaveYeelightState();
+                YeeControlPresetHelper.SaveYeeControlPresets(savedYeeControlPresets);
+                RefreshPresets();
             }
         }
 
@@ -303,28 +297,22 @@ namespace Yeelight_Control
             return Color.FromArgb(color);
         }
 
-        private void SaveYeelightState()
-        {
-            File.WriteAllText(GlobalVariables.PATH_PRESETS, Serialize.ToJson(savedYeelightStates));
-            RefreshPresets();
-        }
-
         private void button_Rename_Click(object sender, EventArgs e)
         {
 
             if (textBox_Rename.Text.Length >= 1)
             {
-                savedYeelightStates[selectedPreset].Name = textBox_Rename.Text;
+                savedYeeControlPresets[selectedPreset].Name = textBox_Rename.Text;
 
-
-                SaveYeelightState();
+                YeeControlPresetHelper.SaveYeeControlPresets(savedYeeControlPresets);
+                RefreshPresets();
             }
         }
 
         private void button_Delete_Click(object sender, EventArgs e)
         {
-            savedYeelightStates.RemoveAt(selectedPreset);
-            SaveYeelightState();
+            savedYeeControlPresets = YeeControlPresetHelper.DeleteYeeControlPresetAtIndex(selectedPreset);
+            RefreshPresets();
         }
 
         private async void button_Overwrite_Click(object sender, EventArgs e)
@@ -334,9 +322,10 @@ namespace Yeelight_Control
             {
                 bulbs.Add(await GetBulb(device));
             }
-            savedYeelightStates[selectedPreset].Bulbs = bulbs;
+            savedYeeControlPresets[selectedPreset].Bulbs = bulbs;
 
-            SaveYeelightState();
+            YeeControlPresetHelper.SaveYeeControlPresets(savedYeeControlPresets);
+            RefreshPresets();
         }
 
         private void trackBarTemperature_Scroll(object sender, EventArgs e)
@@ -349,11 +338,6 @@ namespace Yeelight_Control
             ReconnectIfNeeded();
             GetSelectedLights().SetColorTemperature(trackBarTemperature.Value);
         }
-
-
-
-
-
 
         private void MainForm_Closing(object sender, FormClosingEventArgs e)
         {

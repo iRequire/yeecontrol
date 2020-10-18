@@ -7,7 +7,7 @@
 //    var yeelightControlDevice = YeelightControlDevice.FromJson(jsonString);
 
 // https://app.quicktype.io?share=hW2Yil5tIJPxahgKHrjV
-namespace Yeelight_Control.Helpers.YeelightDevices
+namespace Yeelight_Control.Helpers.YeeControlDevice
 {
     using System;
     using System.Collections.Generic;
@@ -17,14 +17,14 @@ namespace Yeelight_Control.Helpers.YeelightDevices
     using Newtonsoft.Json.Converters;
     using Yeelight_Control.Helpers;
 
-    public partial class YeelightControlDevice
+    public partial class YeeControlDevice
     {
         [JsonProperty("hostname")]
         public string Hostname { get; set; }
     }
 
-    public partial class YeelightControlDevice
+    public partial class YeeControlDevice
     {
-        public static List<YeelightControlDevice> FromJson(string json) => JsonConvert.DeserializeObject<List<YeelightControlDevice>>(json, Converter.Settings);
+        public static List<YeeControlDevice> FromJson(string json) => JsonConvert.DeserializeObject<List<YeeControlDevice>>(json, Converter.Settings);
     }
 }

@@ -69,7 +69,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Helpers\YeelightDevices\YeelightDevices.cs" />
+    <Compile Include="Helpers\YeeControlDevice\YeeControlDeviceHelper.cs" />
     <Compile Include="Devices.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,7 +78,8 @@
     </Compile>
     <Compile Include="Helpers\GlobalVariables.cs" />
     <Compile Include="Helpers\JSONHelper.cs" />
-    <Compile Include="Helpers\YeelightDevices\YeelightControlDevice.cs" />
+    <Compile Include="Helpers\YeeControlDevice\YeeControlDevice.cs" />
+    <Compile Include="Helpers\YeeControlPreset\YeeControlPresetHelper.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,7 +88,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Helpers\YeelightPreset.cs" />
+    <Compile Include="Helpers\YeeControlPreset\YeeControlPreset.cs" />
     <EmbeddedResource Include="Devices.resx">
       <DependentUpon>Devices.cs</DependentUpon>
     </EmbeddedResource>

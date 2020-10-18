@@ -8,7 +8,7 @@
 
 // https://app.quicktype.io?share=vz7DMmp5P9OCDuTqnhRh
 
-namespace Yeelight_Control
+namespace Yeelight_Control.Helpers.YeeControlPreset
 {
     using System;
     using System.Collections.Generic;
@@ -18,7 +18,7 @@ namespace Yeelight_Control
     using Newtonsoft.Json.Converters;
     using Yeelight_Control.Helpers;
 
-    public partial class YeelightPreset
+    public partial class YeeControlPreset
     {
         [JsonProperty("name")]
         public string Name { get; set; }
@@ -57,9 +57,9 @@ namespace Yeelight_Control
         public int B { get; set; }
     }
 
-    public partial class YeelightPreset
+    public partial class YeeControlPreset
     {
-        public static List<YeelightPreset> FromJson(string json) => JsonConvert.DeserializeObject<List<YeelightPreset>>(json, Converter.Settings);
+        public static List<YeeControlPreset> FromJson(string json) => JsonConvert.DeserializeObject<List<YeeControlPreset>>(json, Converter.Settings);
     }
 
 }
