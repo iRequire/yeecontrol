@@ -28,16 +28,17 @@ namespace Yeelight_Control
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private async void MainForm_Load(object sender, EventArgs e)
         {
             toolStripStatusLabel1.Text = "YeeControl " + GlobalVariables.VERSION + " | www.yeecontrol.com";
+            this.Size = defaultSize;
+
             foreach (YeeControlDevice ycd in YeeControlDeviceHelper.GetYeeControlDevices())
             {
                 allDevices.Add(new Device(ycd.Hostname));
             }
-            allDevices.Connect();
+            await allDevices.Connect();
 
-            this.Size = defaultSize;
 
             RefreshPresets();
             RefreshCheckedListBox();
