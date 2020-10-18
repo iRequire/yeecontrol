@@ -76,9 +76,11 @@
             this.groupBox1.Controls.Add(this.button_Color);
             this.groupBox1.Controls.Add(this.button_ToggleOff);
             this.groupBox1.Controls.Add(this.button_ToggleOn);
-            this.groupBox1.Location = new System.Drawing.Point(236, 162);
+            this.groupBox1.Location = new System.Drawing.Point(275, 187);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(316, 115);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.groupBox1.Size = new System.Drawing.Size(369, 133);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Configuration";
@@ -91,9 +93,11 @@
             this.groupBox5.Controls.Add(this.trackBarBrightness);
             this.groupBox5.Controls.Add(this.button_Brightness);
             this.groupBox5.Controls.Add(this.label_Brightness);
-            this.groupBox5.Location = new System.Drawing.Point(106, 19);
+            this.groupBox5.Location = new System.Drawing.Point(124, 22);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(200, 88);
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.groupBox5.Size = new System.Drawing.Size(233, 102);
             this.groupBox5.TabIndex = 14;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Brightness/Temperature";
@@ -101,11 +105,12 @@
             // trackBarTemperature
             // 
             this.trackBarTemperature.AutoSize = false;
-            this.trackBarTemperature.Location = new System.Drawing.Point(6, 60);
+            this.trackBarTemperature.Location = new System.Drawing.Point(7, 69);
+            this.trackBarTemperature.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.trackBarTemperature.Maximum = 6500;
             this.trackBarTemperature.Minimum = 1700;
             this.trackBarTemperature.Name = "trackBarTemperature";
-            this.trackBarTemperature.Size = new System.Drawing.Size(107, 22);
+            this.trackBarTemperature.Size = new System.Drawing.Size(125, 25);
             this.trackBarTemperature.TabIndex = 6;
             this.trackBarTemperature.TickStyle = System.Windows.Forms.TickStyle.None;
             this.trackBarTemperature.Value = 4000;
@@ -113,9 +118,10 @@
             // 
             // button_Temperature
             // 
-            this.button_Temperature.Location = new System.Drawing.Point(158, 59);
+            this.button_Temperature.Location = new System.Drawing.Point(184, 68);
+            this.button_Temperature.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button_Temperature.Name = "button_Temperature";
-            this.button_Temperature.Size = new System.Drawing.Size(34, 23);
+            this.button_Temperature.Size = new System.Drawing.Size(40, 27);
             this.button_Temperature.TabIndex = 8;
             this.button_Temperature.Text = "OK";
             this.button_Temperature.UseVisualStyleBackColor = true;
@@ -124,20 +130,22 @@
             // label_Temperature
             // 
             this.label_Temperature.AutoSize = true;
-            this.label_Temperature.Location = new System.Drawing.Point(114, 65);
+            this.label_Temperature.Location = new System.Drawing.Point(133, 75);
+            this.label_Temperature.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Temperature.Name = "label_Temperature";
-            this.label_Temperature.Size = new System.Drawing.Size(38, 13);
+            this.label_Temperature.Size = new System.Drawing.Size(38, 15);
             this.label_Temperature.TabIndex = 7;
             this.label_Temperature.Text = "4000K";
             // 
             // trackBarBrightness
             // 
             this.trackBarBrightness.AutoSize = false;
-            this.trackBarBrightness.Location = new System.Drawing.Point(6, 14);
+            this.trackBarBrightness.Location = new System.Drawing.Point(7, 16);
+            this.trackBarBrightness.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.trackBarBrightness.Maximum = 100;
             this.trackBarBrightness.Minimum = 1;
             this.trackBarBrightness.Name = "trackBarBrightness";
-            this.trackBarBrightness.Size = new System.Drawing.Size(107, 22);
+            this.trackBarBrightness.Size = new System.Drawing.Size(125, 25);
             this.trackBarBrightness.TabIndex = 3;
             this.trackBarBrightness.TickStyle = System.Windows.Forms.TickStyle.None;
             this.trackBarBrightness.Value = 100;
@@ -145,9 +153,10 @@
             // 
             // button_Brightness
             // 
-            this.button_Brightness.Location = new System.Drawing.Point(158, 14);
+            this.button_Brightness.Location = new System.Drawing.Point(184, 16);
+            this.button_Brightness.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button_Brightness.Name = "button_Brightness";
-            this.button_Brightness.Size = new System.Drawing.Size(34, 23);
+            this.button_Brightness.Size = new System.Drawing.Size(40, 27);
             this.button_Brightness.TabIndex = 5;
             this.button_Brightness.Text = "OK";
             this.button_Brightness.UseVisualStyleBackColor = true;
@@ -156,17 +165,19 @@
             // label_Brightness
             // 
             this.label_Brightness.AutoSize = true;
-            this.label_Brightness.Location = new System.Drawing.Point(119, 19);
+            this.label_Brightness.Location = new System.Drawing.Point(139, 22);
+            this.label_Brightness.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Brightness.Name = "label_Brightness";
-            this.label_Brightness.Size = new System.Drawing.Size(33, 13);
+            this.label_Brightness.Size = new System.Drawing.Size(35, 15);
             this.label_Brightness.TabIndex = 4;
             this.label_Brightness.Text = "100%";
             // 
             // button_White
             // 
-            this.button_White.Location = new System.Drawing.Point(6, 84);
+            this.button_White.Location = new System.Drawing.Point(7, 97);
+            this.button_White.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button_White.Name = "button_White";
-            this.button_White.Size = new System.Drawing.Size(76, 23);
+            this.button_White.Size = new System.Drawing.Size(89, 27);
             this.button_White.TabIndex = 6;
             this.button_White.Text = "White";
             this.button_White.UseVisualStyleBackColor = true;
@@ -174,9 +185,10 @@
             // 
             // button_Color
             // 
-            this.button_Color.Location = new System.Drawing.Point(6, 52);
+            this.button_Color.Location = new System.Drawing.Point(7, 60);
+            this.button_Color.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button_Color.Name = "button_Color";
-            this.button_Color.Size = new System.Drawing.Size(76, 23);
+            this.button_Color.Size = new System.Drawing.Size(89, 27);
             this.button_Color.TabIndex = 2;
             this.button_Color.Text = "Color";
             this.button_Color.UseVisualStyleBackColor = true;
@@ -184,9 +196,10 @@
             // 
             // button_ToggleOff
             // 
-            this.button_ToggleOff.Location = new System.Drawing.Point(43, 19);
+            this.button_ToggleOff.Location = new System.Drawing.Point(50, 22);
+            this.button_ToggleOff.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button_ToggleOff.Name = "button_ToggleOff";
-            this.button_ToggleOff.Size = new System.Drawing.Size(39, 25);
+            this.button_ToggleOff.Size = new System.Drawing.Size(46, 29);
             this.button_ToggleOff.TabIndex = 1;
             this.button_ToggleOff.Text = "OFF";
             this.button_ToggleOff.UseVisualStyleBackColor = true;
@@ -194,9 +207,10 @@
             // 
             // button_ToggleOn
             // 
-            this.button_ToggleOn.Location = new System.Drawing.Point(6, 19);
+            this.button_ToggleOn.Location = new System.Drawing.Point(7, 22);
+            this.button_ToggleOn.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button_ToggleOn.Name = "button_ToggleOn";
-            this.button_ToggleOn.Size = new System.Drawing.Size(31, 25);
+            this.button_ToggleOn.Size = new System.Drawing.Size(36, 29);
             this.button_ToggleOn.TabIndex = 0;
             this.button_ToggleOn.Text = "ON";
             this.button_ToggleOn.UseVisualStyleBackColor = true;
@@ -205,9 +219,11 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.checkedListBox_Devices);
-            this.groupBox2.Location = new System.Drawing.Point(12, 12);
+            this.groupBox2.Location = new System.Drawing.Point(14, 14);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(540, 144);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.groupBox2.Size = new System.Drawing.Size(630, 166);
             this.groupBox2.TabIndex = 11;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Lights";
@@ -215,16 +231,18 @@
             // checkedListBox_Devices
             // 
             this.checkedListBox_Devices.FormattingEnabled = true;
-            this.checkedListBox_Devices.Location = new System.Drawing.Point(6, 13);
+            this.checkedListBox_Devices.Location = new System.Drawing.Point(7, 15);
+            this.checkedListBox_Devices.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.checkedListBox_Devices.Name = "checkedListBox_Devices";
-            this.checkedListBox_Devices.Size = new System.Drawing.Size(528, 124);
+            this.checkedListBox_Devices.Size = new System.Drawing.Size(615, 130);
             this.checkedListBox_Devices.TabIndex = 0;
             // 
             // button_Dropdown
             // 
-            this.button_Dropdown.Location = new System.Drawing.Point(12, 195);
+            this.button_Dropdown.Location = new System.Drawing.Point(14, 225);
+            this.button_Dropdown.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button_Dropdown.Name = "button_Dropdown";
-            this.button_Dropdown.Size = new System.Drawing.Size(100, 25);
+            this.button_Dropdown.Size = new System.Drawing.Size(117, 29);
             this.button_Dropdown.TabIndex = 12;
             this.button_Dropdown.Text = "Toggle Presets";
             this.button_Dropdown.UseVisualStyleBackColor = true;
@@ -235,9 +253,11 @@
             this.groupBox3.Controls.Add(this.groupBox_Edit);
             this.groupBox3.Controls.Add(this.groupBox4);
             this.groupBox3.Controls.Add(this.listBox1);
-            this.groupBox3.Location = new System.Drawing.Point(12, 292);
+            this.groupBox3.Location = new System.Drawing.Point(14, 337);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(540, 167);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.groupBox3.Size = new System.Drawing.Size(630, 193);
             this.groupBox3.TabIndex = 13;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Configurations/Presets";
@@ -248,18 +268,21 @@
             this.groupBox_Edit.Controls.Add(this.button_Delete);
             this.groupBox_Edit.Controls.Add(this.textBox_Rename);
             this.groupBox_Edit.Controls.Add(this.button_Rename);
-            this.groupBox_Edit.Location = new System.Drawing.Point(246, 19);
+            this.groupBox_Edit.Location = new System.Drawing.Point(287, 22);
+            this.groupBox_Edit.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox_Edit.Name = "groupBox_Edit";
-            this.groupBox_Edit.Size = new System.Drawing.Size(288, 76);
+            this.groupBox_Edit.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.groupBox_Edit.Size = new System.Drawing.Size(336, 88);
             this.groupBox_Edit.TabIndex = 4;
             this.groupBox_Edit.TabStop = false;
             this.groupBox_Edit.Text = "Edit Configuration";
             // 
             // button_Overwrite
             // 
-            this.button_Overwrite.Location = new System.Drawing.Point(6, 45);
+            this.button_Overwrite.Location = new System.Drawing.Point(7, 52);
+            this.button_Overwrite.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button_Overwrite.Name = "button_Overwrite";
-            this.button_Overwrite.Size = new System.Drawing.Size(88, 21);
+            this.button_Overwrite.Size = new System.Drawing.Size(103, 24);
             this.button_Overwrite.TabIndex = 3;
             this.button_Overwrite.Text = "Overwrite";
             this.button_Overwrite.UseVisualStyleBackColor = true;
@@ -267,9 +290,10 @@
             // 
             // button_Delete
             // 
-            this.button_Delete.Location = new System.Drawing.Point(100, 45);
+            this.button_Delete.Location = new System.Drawing.Point(117, 52);
+            this.button_Delete.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button_Delete.Name = "button_Delete";
-            this.button_Delete.Size = new System.Drawing.Size(59, 21);
+            this.button_Delete.Size = new System.Drawing.Size(69, 24);
             this.button_Delete.TabIndex = 2;
             this.button_Delete.Text = "Delete";
             this.button_Delete.UseVisualStyleBackColor = true;
@@ -277,17 +301,19 @@
             // 
             // textBox_Rename
             // 
-            this.textBox_Rename.Location = new System.Drawing.Point(6, 19);
+            this.textBox_Rename.Location = new System.Drawing.Point(7, 22);
+            this.textBox_Rename.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox_Rename.Name = "textBox_Rename";
-            this.textBox_Rename.Size = new System.Drawing.Size(218, 20);
+            this.textBox_Rename.Size = new System.Drawing.Size(254, 23);
             this.textBox_Rename.TabIndex = 0;
             this.textBox_Rename.Text = "YeelightPreset";
             // 
             // button_Rename
             // 
-            this.button_Rename.Location = new System.Drawing.Point(230, 18);
+            this.button_Rename.Location = new System.Drawing.Point(268, 21);
+            this.button_Rename.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button_Rename.Name = "button_Rename";
-            this.button_Rename.Size = new System.Drawing.Size(52, 21);
+            this.button_Rename.Size = new System.Drawing.Size(61, 24);
             this.button_Rename.TabIndex = 1;
             this.button_Rename.Text = "OK";
             this.button_Rename.UseVisualStyleBackColor = true;
@@ -297,26 +323,30 @@
             // 
             this.groupBox4.Controls.Add(this.textBox_Preset);
             this.groupBox4.Controls.Add(this.button_SavePreset);
-            this.groupBox4.Location = new System.Drawing.Point(246, 101);
+            this.groupBox4.Location = new System.Drawing.Point(287, 117);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(288, 52);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.groupBox4.Size = new System.Drawing.Size(336, 60);
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Save Configuration";
             // 
             // textBox_Preset
             // 
-            this.textBox_Preset.Location = new System.Drawing.Point(6, 19);
+            this.textBox_Preset.Location = new System.Drawing.Point(7, 22);
+            this.textBox_Preset.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox_Preset.Name = "textBox_Preset";
-            this.textBox_Preset.Size = new System.Drawing.Size(218, 20);
+            this.textBox_Preset.Size = new System.Drawing.Size(254, 23);
             this.textBox_Preset.TabIndex = 0;
             this.textBox_Preset.Text = "YeelightPreset";
             // 
             // button_SavePreset
             // 
-            this.button_SavePreset.Location = new System.Drawing.Point(230, 18);
+            this.button_SavePreset.Location = new System.Drawing.Point(268, 21);
+            this.button_SavePreset.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button_SavePreset.Name = "button_SavePreset";
-            this.button_SavePreset.Size = new System.Drawing.Size(52, 21);
+            this.button_SavePreset.Size = new System.Drawing.Size(61, 24);
             this.button_SavePreset.TabIndex = 1;
             this.button_SavePreset.Text = "Save";
             this.button_SavePreset.UseVisualStyleBackColor = true;
@@ -325,16 +355,19 @@
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(6, 19);
+            this.listBox1.ItemHeight = 15;
+            this.listBox1.Location = new System.Drawing.Point(7, 22);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(234, 134);
+            this.listBox1.Size = new System.Drawing.Size(272, 154);
             this.listBox1.TabIndex = 2;
             // 
             // button_Devices
             // 
-            this.button_Devices.Location = new System.Drawing.Point(12, 162);
+            this.button_Devices.Location = new System.Drawing.Point(14, 187);
+            this.button_Devices.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button_Devices.Name = "button_Devices";
-            this.button_Devices.Size = new System.Drawing.Size(100, 25);
+            this.button_Devices.Size = new System.Drawing.Size(117, 29);
             this.button_Devices.TabIndex = 15;
             this.button_Devices.Text = "Open Devices";
             this.button_Devices.UseVisualStyleBackColor = true;
@@ -345,9 +378,10 @@
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
             this.statusStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow;
-            this.statusStrip1.Location = new System.Drawing.Point(0, 466);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 541);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(564, 20);
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 16, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(654, 20);
             this.statusStrip1.SizingGrip = false;
             this.statusStrip1.TabIndex = 17;
             this.statusStrip1.Text = "statusStrip1";
@@ -360,9 +394,9 @@
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(564, 486);
+            this.ClientSize = new System.Drawing.Size(654, 561);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.button_Devices);
             this.Controls.Add(this.groupBox3);
@@ -371,6 +405,7 @@
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "MainForm";

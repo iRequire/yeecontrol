@@ -46,9 +46,10 @@
             // 
             // button_Discover
             // 
-            this.button_Discover.Location = new System.Drawing.Point(12, 347);
+            this.button_Discover.Location = new System.Drawing.Point(14, 400);
+            this.button_Discover.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button_Discover.Name = "button_Discover";
-            this.button_Discover.Size = new System.Drawing.Size(123, 30);
+            this.button_Discover.Size = new System.Drawing.Size(144, 35);
             this.button_Discover.TabIndex = 0;
             this.button_Discover.Text = "Discover Devices";
             this.button_Discover.UseVisualStyleBackColor = true;
@@ -57,35 +58,40 @@
             // listBox_Devices
             // 
             this.listBox_Devices.FormattingEnabled = true;
-            this.listBox_Devices.Location = new System.Drawing.Point(12, 12);
+            this.listBox_Devices.ItemHeight = 15;
+            this.listBox_Devices.Location = new System.Drawing.Point(14, 14);
+            this.listBox_Devices.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.listBox_Devices.Name = "listBox_Devices";
-            this.listBox_Devices.Size = new System.Drawing.Size(360, 329);
+            this.listBox_Devices.Size = new System.Drawing.Size(419, 379);
             this.listBox_Devices.TabIndex = 1;
             this.listBox_Devices.SelectedIndexChanged += new System.EventHandler(this.listBox_Devices_SelectedIndexChanged);
             // 
             // label_Hostname
             // 
             this.label_Hostname.AutoSize = true;
-            this.label_Hostname.Location = new System.Drawing.Point(378, 12);
+            this.label_Hostname.Location = new System.Drawing.Point(441, 14);
+            this.label_Hostname.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Hostname.Name = "label_Hostname";
-            this.label_Hostname.Size = new System.Drawing.Size(121, 13);
+            this.label_Hostname.Size = new System.Drawing.Size(139, 15);
             this.label_Hostname.TabIndex = 2;
             this.label_Hostname.Text = "Hostname: <Hostname>";
             // 
             // label_Name
             // 
             this.label_Name.AutoSize = true;
-            this.label_Name.Location = new System.Drawing.Point(378, 29);
+            this.label_Name.Location = new System.Drawing.Point(441, 33);
+            this.label_Name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Name.Name = "label_Name";
-            this.label_Name.Size = new System.Drawing.Size(81, 13);
+            this.label_Name.Size = new System.Drawing.Size(93, 15);
             this.label_Name.TabIndex = 3;
             this.label_Name.Text = "Name: <Name>";
             // 
             // button_Delete
             // 
-            this.button_Delete.Location = new System.Drawing.Point(6, 19);
+            this.button_Delete.Location = new System.Drawing.Point(7, 22);
+            this.button_Delete.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button_Delete.Name = "button_Delete";
-            this.button_Delete.Size = new System.Drawing.Size(75, 23);
+            this.button_Delete.Size = new System.Drawing.Size(88, 27);
             this.button_Delete.TabIndex = 4;
             this.button_Delete.Text = "Delete";
             this.button_Delete.UseVisualStyleBackColor = true;
@@ -96,18 +102,21 @@
             this.groupBoxActions.Controls.Add(this.button_Name);
             this.groupBoxActions.Controls.Add(this.textBox_Name);
             this.groupBoxActions.Controls.Add(this.button_Delete);
-            this.groupBoxActions.Location = new System.Drawing.Point(381, 55);
+            this.groupBoxActions.Location = new System.Drawing.Point(444, 63);
+            this.groupBoxActions.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBoxActions.Name = "groupBoxActions";
-            this.groupBoxActions.Size = new System.Drawing.Size(291, 100);
+            this.groupBoxActions.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.groupBoxActions.Size = new System.Drawing.Size(340, 115);
             this.groupBoxActions.TabIndex = 5;
             this.groupBoxActions.TabStop = false;
             this.groupBoxActions.Text = "Actions";
             // 
             // button_Name
             // 
-            this.button_Name.Location = new System.Drawing.Point(201, 69);
+            this.button_Name.Location = new System.Drawing.Point(234, 80);
+            this.button_Name.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button_Name.Name = "button_Name";
-            this.button_Name.Size = new System.Drawing.Size(84, 23);
+            this.button_Name.Size = new System.Drawing.Size(98, 27);
             this.button_Name.TabIndex = 7;
             this.button_Name.Text = "Rename";
             this.button_Name.UseVisualStyleBackColor = true;
@@ -115,16 +124,18 @@
             // 
             // textBox_Name
             // 
-            this.textBox_Name.Location = new System.Drawing.Point(6, 71);
+            this.textBox_Name.Location = new System.Drawing.Point(7, 82);
+            this.textBox_Name.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox_Name.Name = "textBox_Name";
-            this.textBox_Name.Size = new System.Drawing.Size(189, 20);
+            this.textBox_Name.Size = new System.Drawing.Size(220, 23);
             this.textBox_Name.TabIndex = 6;
             // 
             // button_Open
             // 
-            this.button_Open.Location = new System.Drawing.Point(387, 311);
+            this.button_Open.Location = new System.Drawing.Point(451, 359);
+            this.button_Open.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button_Open.Name = "button_Open";
-            this.button_Open.Size = new System.Drawing.Size(285, 30);
+            this.button_Open.Size = new System.Drawing.Size(332, 35);
             this.button_Open.TabIndex = 7;
             this.button_Open.Text = "Open Yeelight Control";
             this.button_Open.UseVisualStyleBackColor = true;
@@ -135,9 +146,10 @@
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
             this.statusStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow;
-            this.statusStrip1.Location = new System.Drawing.Point(0, 386);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 448);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(684, 20);
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 16, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(798, 20);
             this.statusStrip1.SizingGrip = false;
             this.statusStrip1.TabIndex = 18;
             this.statusStrip1.Text = "statusStrip1";
@@ -150,9 +162,9 @@
             // 
             // Devices
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(684, 406);
+            this.ClientSize = new System.Drawing.Size(798, 468);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.button_Open);
             this.Controls.Add(this.groupBoxActions);
@@ -162,6 +174,7 @@
             this.Controls.Add(this.button_Discover);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Devices";
