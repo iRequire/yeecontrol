@@ -87,28 +87,31 @@ namespace Yeelight_Control
 
         private void listBox1_SelectedIndexChanged(object sender, System.EventArgs e)
         {
-            string curItem = listBox1.SelectedItem.ToString();
-            YeelightPreset state = savedYeelightStates[listBox1.SelectedIndex];
-            selectedPreset = listBox1.SelectedIndex;
-            textBox_Rename.Text = state.Name;
-
-            ReconnectIfNeeded();
-            for(int i = 0; i < state.Bulbs.Count; i++)
+            string curItem = listBox1.SelectedItem?.ToString();
+            if (curItem is string)
             {
-                Device d = GetDeviceByHostname(state.Bulbs[i].Hostname);
-                if (d is Device)
+                YeelightPreset state = savedYeelightStates[listBox1.SelectedIndex];
+                selectedPreset = listBox1.SelectedIndex;
+                textBox_Rename.Text = state.Name;
+
+                ReconnectIfNeeded();
+                for (int i = 0; i < state.Bulbs.Count; i++)
                 {
-                    d.SetPower(state.Bulbs[i].Power);
-                    d.SetRGBColor(state.Bulbs[i].Color.R, state.Bulbs[i].Color.G, state.Bulbs[i].Color.B);
-                    d.SetBrightness(state.Bulbs[i].Brightness);
-                    if (state.Bulbs[i].Temperature.HasValue)
+                    Device d = GetDeviceByHostname(state.Bulbs[i].Hostname);
+                    if (d is Device)
                     {
-                        d.SetColorTemperature(state.Bulbs[i].Temperature.Value);
+                        d.SetPower(state.Bulbs[i].Power);
+                        d.SetRGBColor(state.Bulbs[i].Color.R, state.Bulbs[i].Color.G, state.Bulbs[i].Color.B);
+                        d.SetBrightness(state.Bulbs[i].Brightness);
+                        if (state.Bulbs[i].Temperature.HasValue)
+                        {
+                            d.SetColorTemperature(state.Bulbs[i].Temperature.Value);
+                        }
                     }
                 }
-            }
 
-            groupBox_Edit.Enabled = true;
+                groupBox_Edit.Enabled = true;
+            }
         }
 
         private Device GetDeviceByHostname(string hostname)
