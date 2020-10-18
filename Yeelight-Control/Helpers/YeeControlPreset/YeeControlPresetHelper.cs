@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Yeelight_Control.Helpers.YeeControlPreset
+namespace Yeelight_Control.Helpers
 {
     public static class YeeControlPresetHelper
     {

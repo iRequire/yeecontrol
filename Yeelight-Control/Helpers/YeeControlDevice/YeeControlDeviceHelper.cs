@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Yeelight_Control.Helpers.YeeControlDevice
+namespace Yeelight_Control.Helpers
 {
     public static class YeeControlDeviceHelper
     {

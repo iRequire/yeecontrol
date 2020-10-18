@@ -10,7 +10,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Yeelight_Control.Helpers;
-using Yeelight_Control.Helpers.YeeControlDevice;
 using YeelightAPI;
 
 namespace Yeelight_Control

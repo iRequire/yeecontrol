@@ -7,8 +7,6 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Yeelight_Control.Helpers;
-using Yeelight_Control.Helpers.YeeControlDevice;
-using Yeelight_Control.Helpers.YeeControlPreset;
 using YeelightAPI;
 
 namespace Yeelight_Control

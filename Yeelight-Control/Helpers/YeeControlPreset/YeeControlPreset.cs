@@ -8,7 +8,7 @@
 
 // https://app.quicktype.io?share=vz7DMmp5P9OCDuTqnhRh
 
-namespace Yeelight_Control.Helpers.YeeControlPreset
+namespace Yeelight_Control.Helpers
 {
     using System;
     using System.Collections.Generic;
