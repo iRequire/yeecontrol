@@ -27,6 +27,8 @@ namespace Yeelight_Control
 
         private void Devices_Load(object sender, EventArgs e)
         {
+            toolStripStatusLabel1.Text = "YeeControl " + GlobalVariables.VERSION + " | www.yeecontrol.com";
+
             if (!File.Exists(GlobalVariables.PATH_DEVICES))
             {
                 File.WriteAllText(GlobalVariables.PATH_DEVICES, "[]");

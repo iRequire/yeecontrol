@@ -355,8 +355,8 @@
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(259, 15);
-            this.toolStripStatusLabel1.Text = "Yeelight Control 1.0 | Copyright 2020 Patrick List";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(232, 15);
+            this.toolStripStatusLabel1.Text = "Yeelight Control 1.0 | www.yeecontrol.com";
             // 
             // MainForm
             // 
@@ -375,7 +375,7 @@
             this.MinimizeBox = false;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Yeelight Control";
+            this.Text = "YeeControl";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_Closing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);

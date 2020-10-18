@@ -31,13 +31,13 @@ namespace Yeelight_Control
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            foreach(YeelightControlDevice ycd in YeelightDevices.GetYeelightControlDevices())
+            toolStripStatusLabel1.Text = "YeeControl " + GlobalVariables.VERSION + " | www.yeecontrol.com";
+            foreach (YeelightControlDevice ycd in YeelightDevices.GetYeelightControlDevices())
             {
                 allDevices.Add(new Device(ycd.Hostname));
             }
             allDevices.Connect();
 
-            RT(() => RefreshLightState(), 7, cts.Token);
             this.Size = defaultSize;
 
             if(!File.Exists(GlobalVariables.PATH_PRESETS))
@@ -47,7 +47,11 @@ namespace Yeelight_Control
 
             RefreshPresets();
             RefreshCheckedListBox();
+            RefreshLightState();
+
             listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
+
+            RT(() => RefreshLightState(), 7, cts.Token);
         }
 
         private void RefreshPresets()
@@ -127,45 +131,46 @@ namespace Yeelight_Control
 
         private async void RefreshLightState()
         {
-            for (int i = 0; i < checkedListBox_Devices.Items.Count; i++)
+            try
             {
-                string hostname = hostnamesByListIndex[i];
-                Device device = GetDeviceByHostname(hostname);
-                Dictionary<YeelightAPI.Models.PROPERTIES, object> props = await device.GetAllProps();
-
-                string text = props[YeelightAPI.Models.PROPERTIES.name].ToString();
-                text += " [" + hostname + "]";
-                text += " (";
-                if (props[YeelightAPI.Models.PROPERTIES.power].ToString() == "on")
+                ReconnectIfNeeded();
+                for (int i = 0; i < checkedListBox_Devices.Items.Count; i++)
                 {
-                    string color = "";
-                    if (props[YeelightAPI.Models.PROPERTIES.color_mode].ToString() == "1") //RGB Mode
+                    string hostname = hostnamesByListIndex[i];
+                    Device device = GetDeviceByHostname(hostname);
+                    Dictionary<YeelightAPI.Models.PROPERTIES, object> props = await device.GetAllProps();
+
+                    string text = props[YeelightAPI.Models.PROPERTIES.name].ToString();
+                    text += " [" + hostname + "]";
+                    text += " - ";
+                    if (props[YeelightAPI.Models.PROPERTIES.power].ToString() == "on")
                     {
-                        Color c = GetColorFromInt(int.Parse(props[YeelightAPI.Models.PROPERTIES.rgb].ToString()));
-                        color = "(" + c.R + ", " + c.G + ", " + c.B + ")";
+                        string color = "";
+                        if (props[YeelightAPI.Models.PROPERTIES.color_mode].ToString() == "1") //RGB Mode
+                        {
+                            Color c = GetColorFromInt(int.Parse(props[YeelightAPI.Models.PROPERTIES.rgb].ToString()));
+                            color = "(" + c.R + ", " + c.G + ", " + c.B + ")";
+                        }
+                        else
+                        {
+                            color = props[YeelightAPI.Models.PROPERTIES.ct].ToString() + "K";
+                        }
+                        string bright = props[YeelightAPI.Models.PROPERTIES.bright].ToString() + "%";
+
+                        text += "ON, " + color + ", " + bright;
                     }
                     else
                     {
-                        color = props[YeelightAPI.Models.PROPERTIES.ct].ToString() + "K";
+                        text += "OFF";
                     }
-                    string bright = props[YeelightAPI.Models.PROPERTIES.bright].ToString() + "%";
 
-                    text += "ON, " + color + ", " + bright;
+                    checkedListBox_Devices.BeginInvoke((MethodInvoker)delegate ()
+                    {
+                        checkedListBox_Devices.Items[i - 1] = text;
+                    });
                 }
-                else
-                {
-                    text += "OFF";
-                }
-
-                
-
-
-                text += ")";
-                checkedListBox_Devices.BeginInvoke((MethodInvoker)delegate ()
-                {
-                    checkedListBox_Devices.Items[i-1] = text;
-                });
             }
+            catch (Exception) { }
         }
 
         static void RT(Action action, int seconds, CancellationToken token)

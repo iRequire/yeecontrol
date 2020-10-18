@@ -7,7 +7,7 @@
     <ProjectGuid>{C867EC32-B2D0-4D39-882D-451557505D35}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Yeelight_Control</RootNamespace>
-    <AssemblyName>YeelightControl</AssemblyName>
+    <AssemblyName>YeeControl</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -39,6 +39,9 @@
   </PropertyGroup>
   <PropertyGroup>
     <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Yeelight_Control.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">

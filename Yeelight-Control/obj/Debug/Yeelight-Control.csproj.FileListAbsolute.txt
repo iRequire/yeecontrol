@@ -7,10 +7,10 @@ C:\Users\Patrick\source\repos\Yeelight-Control\Yeelight-Control\obj\Debug\Yeelig
 C:\Users\Patrick\source\repos\Yeelight-Control\Yeelight-Control\obj\Debug\Yeelight-Control.csproj.GenerateResource.cache
 C:\Users\Patrick\source\repos\Yeelight-Control\Yeelight-Control\obj\Debug\Yeelight-Control.csproj.CoreCompileInputs.cache
 C:\Users\Patrick\source\repos\Yeelight-Control\Yeelight-Control\obj\Debug\Yeelight-Control.csproj.CopyComplete
-C:\Users\Patrick\source\repos\Yeelight-Control\Yeelight-Control\bin\Debug\YeelightControl.exe.config
-C:\Users\Patrick\source\repos\Yeelight-Control\Yeelight-Control\bin\Debug\YeelightControl.exe
-C:\Users\Patrick\source\repos\Yeelight-Control\Yeelight-Control\bin\Debug\YeelightControl.pdb
-C:\Users\Patrick\source\repos\Yeelight-Control\Yeelight-Control\obj\Debug\YeelightControl.exe
-C:\Users\Patrick\source\repos\Yeelight-Control\Yeelight-Control\obj\Debug\YeelightControl.pdb
 C:\Users\Patrick\source\repos\Yeelight-Control\Yeelight-Control\obj\Debug\Yeelight_Control.Devices.resources
 C:\Users\Patrick\source\repos\Yeelight-Control\Yeelight-Control\obj\Debug\Yeelight-Control.csprojAssemblyReference.cache
+C:\Users\Patrick\source\repos\Yeelight-Control\Yeelight-Control\bin\Debug\YeeControl.exe.config
+C:\Users\Patrick\source\repos\Yeelight-Control\Yeelight-Control\bin\Debug\YeeControl.exe
+C:\Users\Patrick\source\repos\Yeelight-Control\Yeelight-Control\bin\Debug\YeeControl.pdb
+C:\Users\Patrick\source\repos\Yeelight-Control\Yeelight-Control\obj\Debug\YeeControl.exe
+C:\Users\Patrick\source\repos\Yeelight-Control\Yeelight-Control\obj\Debug\YeeControl.pdb

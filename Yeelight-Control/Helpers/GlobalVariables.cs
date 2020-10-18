@@ -8,6 +8,7 @@ namespace Yeelight_Control.Helpers
 {
     public static class GlobalVariables
     {
+        public static string VERSION = "1.0";
         public static string PATH_PRESETS = "YeelightPresets.json";
         public static string PATH_DEVICES = "YeelightDevices.json";
     }
