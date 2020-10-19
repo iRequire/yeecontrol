@@ -9,10 +9,10 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Yeelight_Control.Helpers;
+using YeeControl.Helpers;
 using YeelightAPI;
 
-namespace Yeelight_Control
+namespace YeeControl
 {
     public partial class Devices : Form
     {

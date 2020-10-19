@@ -4,9 +4,9 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Yeelight_Control.Helpers;
+using YeeControl.Helpers;
 
-namespace Yeelight_Control
+namespace YeeControl
 {
     static class Program
     {

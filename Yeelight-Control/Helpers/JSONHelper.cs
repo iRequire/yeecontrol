@@ -3,7 +3,7 @@ using Newtonsoft.Json.Converters;
 using System.Collections.Generic;
 using System.Globalization;
 
-namespace Yeelight_Control.Helpers
+namespace YeeControl.Helpers
 {
     public static class Serialize
     {

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Yeelight_Control.Properties
+namespace YeeControl.Properties
 {
 
 

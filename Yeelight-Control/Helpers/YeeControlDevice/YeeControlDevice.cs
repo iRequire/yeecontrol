@@ -7,7 +7,7 @@
 //    var yeelightControlDevice = YeelightControlDevice.FromJson(jsonString);
 
 // https://app.quicktype.io?share=hW2Yil5tIJPxahgKHrjV
-namespace Yeelight_Control.Helpers
+namespace YeeControl.Helpers
 {
     using System;
     using System.Collections.Generic;
@@ -15,7 +15,7 @@ namespace Yeelight_Control.Helpers
     using System.Globalization;
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
-    using Yeelight_Control.Helpers;
+    using YeeControl.Helpers;
 
     public partial class YeeControlDevice
     {

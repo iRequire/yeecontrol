@@ -8,7 +8,7 @@
 
 // https://app.quicktype.io?share=vz7DMmp5P9OCDuTqnhRh
 
-namespace Yeelight_Control.Helpers
+namespace YeeControl.Helpers
 {
     using System;
     using System.Collections.Generic;
@@ -16,7 +16,7 @@ namespace Yeelight_Control.Helpers
     using System.Globalization;
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
-    using Yeelight_Control.Helpers;
+    using YeeControl.Helpers;
 
     public partial class YeeControlPreset
     {

@@ -1,4 +1,4 @@
-﻿namespace Yeelight_Control
+﻿namespace YeeControl
 {
     partial class MainForm
     {
