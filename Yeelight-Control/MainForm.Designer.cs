@@ -76,7 +76,7 @@
             this.groupBox1.Controls.Add(this.button_Color);
             this.groupBox1.Controls.Add(this.button_ToggleOff);
             this.groupBox1.Controls.Add(this.button_ToggleOn);
-            this.groupBox1.Location = new System.Drawing.Point(236, 162);
+            this.groupBox1.Location = new System.Drawing.Point(118, 162);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(316, 115);
             this.groupBox1.TabIndex = 6;
@@ -93,7 +93,7 @@
             this.groupBox5.Controls.Add(this.label_Brightness);
             this.groupBox5.Location = new System.Drawing.Point(106, 19);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(200, 88);
+            this.groupBox5.Size = new System.Drawing.Size(204, 88);
             this.groupBox5.TabIndex = 14;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Brightness/Temperature";
@@ -207,7 +207,7 @@
             this.groupBox2.Controls.Add(this.checkedListBox_Devices);
             this.groupBox2.Location = new System.Drawing.Point(12, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(540, 144);
+            this.groupBox2.Size = new System.Drawing.Size(422, 144);
             this.groupBox2.TabIndex = 11;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Lights";
@@ -217,7 +217,7 @@
             this.checkedListBox_Devices.FormattingEnabled = true;
             this.checkedListBox_Devices.Location = new System.Drawing.Point(6, 13);
             this.checkedListBox_Devices.Name = "checkedListBox_Devices";
-            this.checkedListBox_Devices.Size = new System.Drawing.Size(528, 124);
+            this.checkedListBox_Devices.Size = new System.Drawing.Size(410, 124);
             this.checkedListBox_Devices.TabIndex = 0;
             // 
             // button_Dropdown
@@ -237,7 +237,7 @@
             this.groupBox3.Controls.Add(this.listBox1);
             this.groupBox3.Location = new System.Drawing.Point(12, 292);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(540, 167);
+            this.groupBox3.Size = new System.Drawing.Size(422, 167);
             this.groupBox3.TabIndex = 13;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Configurations/Presets";
@@ -248,9 +248,9 @@
             this.groupBox_Edit.Controls.Add(this.button_Delete);
             this.groupBox_Edit.Controls.Add(this.textBox_Rename);
             this.groupBox_Edit.Controls.Add(this.button_Rename);
-            this.groupBox_Edit.Location = new System.Drawing.Point(246, 19);
+            this.groupBox_Edit.Location = new System.Drawing.Point(197, 19);
             this.groupBox_Edit.Name = "groupBox_Edit";
-            this.groupBox_Edit.Size = new System.Drawing.Size(288, 76);
+            this.groupBox_Edit.Size = new System.Drawing.Size(219, 76);
             this.groupBox_Edit.TabIndex = 4;
             this.groupBox_Edit.TabStop = false;
             this.groupBox_Edit.Text = "Edit Configuration";
@@ -259,7 +259,7 @@
             // 
             this.button_Overwrite.Location = new System.Drawing.Point(6, 45);
             this.button_Overwrite.Name = "button_Overwrite";
-            this.button_Overwrite.Size = new System.Drawing.Size(88, 21);
+            this.button_Overwrite.Size = new System.Drawing.Size(75, 21);
             this.button_Overwrite.TabIndex = 3;
             this.button_Overwrite.Text = "Overwrite";
             this.button_Overwrite.UseVisualStyleBackColor = true;
@@ -267,7 +267,7 @@
             // 
             // button_Delete
             // 
-            this.button_Delete.Location = new System.Drawing.Point(100, 45);
+            this.button_Delete.Location = new System.Drawing.Point(87, 45);
             this.button_Delete.Name = "button_Delete";
             this.button_Delete.Size = new System.Drawing.Size(59, 21);
             this.button_Delete.TabIndex = 2;
@@ -279,17 +279,17 @@
             // 
             this.textBox_Rename.Location = new System.Drawing.Point(6, 19);
             this.textBox_Rename.Name = "textBox_Rename";
-            this.textBox_Rename.Size = new System.Drawing.Size(218, 20);
+            this.textBox_Rename.Size = new System.Drawing.Size(140, 20);
             this.textBox_Rename.TabIndex = 0;
             this.textBox_Rename.Text = "YeelightPreset";
             // 
             // button_Rename
             // 
-            this.button_Rename.Location = new System.Drawing.Point(230, 18);
+            this.button_Rename.Location = new System.Drawing.Point(152, 18);
             this.button_Rename.Name = "button_Rename";
-            this.button_Rename.Size = new System.Drawing.Size(52, 21);
+            this.button_Rename.Size = new System.Drawing.Size(63, 21);
             this.button_Rename.TabIndex = 1;
-            this.button_Rename.Text = "OK";
+            this.button_Rename.Text = "Rename";
             this.button_Rename.UseVisualStyleBackColor = true;
             this.button_Rename.Click += new System.EventHandler(this.button_Rename_Click);
             // 
@@ -297,9 +297,9 @@
             // 
             this.groupBox4.Controls.Add(this.textBox_Preset);
             this.groupBox4.Controls.Add(this.button_SavePreset);
-            this.groupBox4.Location = new System.Drawing.Point(246, 101);
+            this.groupBox4.Location = new System.Drawing.Point(197, 101);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(288, 52);
+            this.groupBox4.Size = new System.Drawing.Size(219, 52);
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Save Configuration";
@@ -308,15 +308,15 @@
             // 
             this.textBox_Preset.Location = new System.Drawing.Point(6, 19);
             this.textBox_Preset.Name = "textBox_Preset";
-            this.textBox_Preset.Size = new System.Drawing.Size(218, 20);
+            this.textBox_Preset.Size = new System.Drawing.Size(140, 20);
             this.textBox_Preset.TabIndex = 0;
             this.textBox_Preset.Text = "YeelightPreset";
             // 
             // button_SavePreset
             // 
-            this.button_SavePreset.Location = new System.Drawing.Point(230, 18);
+            this.button_SavePreset.Location = new System.Drawing.Point(152, 18);
             this.button_SavePreset.Name = "button_SavePreset";
-            this.button_SavePreset.Size = new System.Drawing.Size(52, 21);
+            this.button_SavePreset.Size = new System.Drawing.Size(61, 21);
             this.button_SavePreset.TabIndex = 1;
             this.button_SavePreset.Text = "Save";
             this.button_SavePreset.UseVisualStyleBackColor = true;
@@ -327,7 +327,7 @@
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(6, 19);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(234, 134);
+            this.listBox1.Size = new System.Drawing.Size(185, 134);
             this.listBox1.TabIndex = 2;
             // 
             // button_Devices
@@ -347,7 +347,7 @@
             this.statusStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow;
             this.statusStrip1.Location = new System.Drawing.Point(0, 466);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(564, 20);
+            this.statusStrip1.Size = new System.Drawing.Size(444, 20);
             this.statusStrip1.SizingGrip = false;
             this.statusStrip1.TabIndex = 17;
             this.statusStrip1.Text = "statusStrip1";
@@ -362,7 +362,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(564, 486);
+            this.ClientSize = new System.Drawing.Size(444, 486);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.button_Devices);
             this.Controls.Add(this.groupBox3);

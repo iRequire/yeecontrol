@@ -15,8 +15,8 @@ namespace Yeelight_Control
     {
         DeviceGroup allDevices = new DeviceGroup();
         CancellationTokenSource cts = new CancellationTokenSource();
-        Size defaultSize = new Size(580, 345);
-        Size expandedSize = new Size(580, 525);
+        Size defaultSize = new Size(460, 345);
+        Size expandedSize = new Size(460, 525);
 
         List<YeeControlPreset> savedYeeControlPresets = new List<YeeControlPreset>();
         int selectedPreset = -1;
