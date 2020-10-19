@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yeelight-Control", "Yeelight-Control\Yeelight-Control.csproj", "{C867EC32-B2D0-4D39-882D-451557505D35}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YeeControl", "Yeelight-Control\YeeControl.csproj", "{C867EC32-B2D0-4D39-882D-451557505D35}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
